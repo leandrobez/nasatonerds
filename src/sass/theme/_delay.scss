@@ -1,0 +1,59 @@
+.il-nasa--delay {
+  width: 100%;
+  background: $back-section;
+  display: none;
+  &.il-circles--show {
+    height: 3rem;
+    display: flex;
+    align-self: auto;
+  }
+  & .il-img--circles {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    & .il-circle {
+      margin-left: 0;
+      width: 8px;
+      height: 8px;
+      line-height: 8px;
+      margin: auto 5px;
+      background: rgb(247, 235, 235);
+      border-radius: 50%;
+      transition: 400ms;
+      animation: run 4s infinite;
+      &:nth-child(2) {
+        background: rgb(192, 192, 216);
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+      }
+      &:nth-child(3) {
+        background: rgb(115, 115, 143);
+        width: 12px;
+        height: 12px;
+        line-height: 12px;
+      }
+      &:nth-child(4) {
+        background: rgb(252, 252, 253);
+        width: 14px;
+        height: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+@keyframes run {
+  0% {
+    transition: 400ms;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX($w-delay);
+    opacity: 0.3;
+  }
+}

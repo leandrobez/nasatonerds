@@ -1,0 +1,21 @@
+.il-header {
+  position: relative;
+  height: $height-banner;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+
+  & .il-header--content {
+    width: 100%;
+    position: relative;
+    & .il-header--text {
+      position: absolute;
+      top: 20vh;
+      //transform: translateY(-50%);
+      width: 100%;
+      background: rgba(35, 26, 26, 0.7);
+      z-index: 5;
+      text-align: center;
+    }
+  }
+}

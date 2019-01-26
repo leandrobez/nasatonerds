@@ -1,0 +1,15 @@
+a.generic-ancor {
+  text-decoration: none;
+  color: $linkColor;
+  font-size: 1.1rem;
+  &.il-menu--link {
+    text-transform: uppercase;
+    font-size: 1rem;
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+  &.il-current {
+    color: $hoverColor;
+  }
+}

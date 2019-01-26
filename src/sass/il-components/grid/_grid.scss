@@ -1,0 +1,48 @@
+#app{
+  position: relative;
+  #particles-js{
+    position: absolute;
+    z-index: 1;
+  }
+}
+.il-container {
+  width: 100%;
+  height: 100%;
+}
+/*Container principal*/
+.il-container--wrapper {
+  max-width: $max-width;
+  @media screen and (max-width: 360px) {
+    $container: 100%;
+    width: $container;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 361px) and (max-width: 500px) {
+    $container: 96%;
+    $lat: (100% - $container) / 2;
+    width: $container;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    $container: 92%;
+    $lat: (100% - $container) / 2;
+    width: $container;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    $container: 88%;
+    $lat: (100% - $container) / 2;
+    width: $container;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1171px) {
+    $container: 80%;
+    $lat: (100% - $container) / 2;
+    width: $container;
+    margin: 0 auto;
+  }
+}

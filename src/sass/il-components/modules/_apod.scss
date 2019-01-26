@@ -1,0 +1,49 @@
+.il-apod--container {
+    display: none;
+    &.il-container--show {
+      display: block;
+    }
+    & .il-apod--content {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  
+      & p {
+        text-align: left;
+      }
+    }
+  
+    & .il-apod--picture {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.45rem;
+      & img {
+        max-width: 400px;
+        margin: 0.45rem auto;
+      }
+      & a.il-apod--link {
+        margin: 1rem auto;
+      }
+    }
+    & .il-player--video {
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &.il-show--video {
+        width: 60%;
+        height: 50%;
+        margin: auto 20%;
+        visibility: visible;
+      }
+      & iframe {
+        border: 2px solid #a06f98;
+        box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+  

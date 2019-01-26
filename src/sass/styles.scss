@@ -1,0 +1,41 @@
+/** Styles for il-nasa*/
+
+//base
+@import 'il-components/base/normalize';
+@include normalize();
+
+//config
+
+@import './config/variables';
+@import './config/tipography';
+
+/*MIXIS*/
+@import 'config/mixins';
+
+//layout
+
+@import './layout/main';
+
+//Grid
+
+@import './il-components/grid/grid';
+@import './il-components/grid/section';
+
+@import './il-components/grid/geral';
+
+//Theme
+
+@import './theme/colors';
+@import './theme/images';
+@import './theme/buttons';
+@import './theme/forms';
+@import './theme/delay';
+@import './theme/alerts';
+
+//Modules
+
+@import './il-components/modules/header';
+@import './il-components/modules/nav';
+@import './il-components/modules/apod';
+@import './il-components/modules/epic';
+@import './il-components/modules/mars';

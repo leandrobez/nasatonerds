@@ -1,0 +1,51 @@
+.il-epic--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+  grid-gap: 0.25rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  @media screen and(min-width:651px) {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
+    grid-gap: 0.35rem;
+  }
+  @media screen and(min-width:951px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
+    grid-gap: 0.45rem;
+  }
+  & .il-epic--card {
+    position: relative;
+    border: 1px solid $primaryColor;
+    & .il-epic--card__body {
+      width: 100%;
+      height: 3.5rem;
+      text-align: center;
+      background: $secondColorAccent;
+      & span {
+        display: block;
+        background: $thirtyColorAccent;
+      }
+      & p {
+        margin: 0;
+      }
+    }
+    & .il-epic--card__poster img {
+      max-width: 310px;
+    }
+    & .il-link {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      height: 1.4rem;
+      & a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 0.9rem;
+        text-decoration: none;
+        //color: white;
+      }
+    }
+  }
+}

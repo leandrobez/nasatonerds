@@ -1,0 +1,34 @@
+.il-mars--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+  grid-gap: 0.25rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  @media screen and(min-width:651px) {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
+    grid-gap: 0.35rem;
+  }
+  @media screen and(min-width:951px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
+    grid-gap: 0.45rem;
+  }
+  & .il-mars--card {
+    position: relative;
+    border: 1px solid $primaryColor;
+    border: 1px solid $primaryColor;
+    & .il-mars--card__body {
+      width: 100%;
+      height: 3.5rem;
+      text-align: center;
+      background: $secondColorAccent;
+      & span {
+        display: block;
+        background: $thirtyColorAccent;
+      }
+      & p {
+        margin: 0;
+      }
+    }
+  }
+}

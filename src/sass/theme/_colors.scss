@@ -1,0 +1,44 @@
+/**Texture */
+.il-color-texture {
+  &--first {
+    color: $primaryColor;
+    &-opac {
+      color: lighten($primaryColor, 0.3);
+    }
+  }
+  &--second {
+    color: $secondColor;
+    &-opac {
+      color: lighten($secondColor, 0.3);
+    }
+  }
+  &--third {
+    color: $thirtyColor;
+    &-opac {
+      color: darken($secondColor, 0.3);
+    }
+  }
+}
+
+
+/**Background*/
+.il-color-background {
+  &--first {
+    background: $primaryColor;
+    &-opac {
+      color: lighten($primaryColor, 0.3);
+    }
+  }
+  &--second {
+    background: $secondColor;
+    &-opac {
+      color: lighten($secondColor, 0.3);
+    }
+  }
+  &--third {
+    background: $thirtyColor;
+    &-opac {
+      color: darken($thirtyColor, 0.3);
+    }
+  }
+}
